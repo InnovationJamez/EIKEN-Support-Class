@@ -1,0 +1,104 @@
+{
+    "question": [
+        {
+            "text": "Justin's mother became angry because he ( ) to wash the dishes after dinner. She said to him that he could not watch TV that evening.",
+            "options": [
+                "gained",
+                "chased",
+                "seated",
+                "refused"
+            ],
+            "answer": "refused"
+        },
+        {
+            "text": "The rain ( ) for over one week, and the level of water in the river became higher and higher.",
+            "options": [
+                "continued",
+                "noticed",
+                "judged",
+                "searched"
+            ],
+            "answer": "continued"
+        },
+        {
+            "text": "A: Mom, I have a bad headache.<br> B: Well, go and look in the cabinet in the bathroom. You'll find some ( ) there.",
+            "options": [
+                "silver",
+                "traffic",
+                "medicine",
+                "evidence"
+            ],
+            "answer": "medicine"
+        },
+        {
+            "text": "Jiro broke an expensive vase, but when his mother asked him about it, he ( ) that he had done it. He was afraid she would be mad.",
+            "options": [
+                "denied",
+                "required",
+                "traded",
+                "greeted"
+            ],
+            "answer": "denied"
+        },
+        {
+            "text": "Mr. Kimura told his staff members to put more information into their sales reports. He said they should ( ) graphs and charts in each report.",
+            "options": [
+                "expect",
+                "claim",
+                "compete",
+                "include"
+            ],
+            "answer": "include"
+        },
+        {
+            "text": "Matt went to the hospital to see his new baby brother. He was surprised at how ( ) the baby's hands were.",
+            "options": [
+                "deep",
+                "global",
+                "tiny",
+                "safe"
+            ],
+            "answer": "tiny"
+        },
+        {
+            "text": "A: Which subject is more important for you to pass, English or math?<br> B: I think they are ( ) important. I spend the same amount of time studying for both.",
+            "options": [
+                "equally",
+                "lastly",
+                "correctly",
+                "sincerely"
+            ],
+            "answer": "equally"
+        },
+        {
+            "text": "Liz was the ( ) of a robbery last week. She had her handbag stolen when she was on the train.",
+            "options": [
+                "dealer",
+                "candidate",
+                "judge",
+                "victim"
+            ],
+            "answer": "victim"
+        },
+        {
+            "text": "A: How is your business going?<br> B: It was a tough year, but we still managed to make a higher ( ) than last year.",
+            "options": [
+                "policy",
+                "contract",
+                "capture",
+                "profit"
+            ],
+            "answer": "profit"
+        },
+        {
+            "text": "Charles bought a new car last week. It was the biggest ( ) he had made in five years.",
+            "options": [
+                "purchase",
+                "custom",
+                "voyage",
+                "fund"
+            ],
+            "answer": "purchase"
+        }
+    ]
+}

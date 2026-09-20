@@ -1,0 +1,144 @@
+{
+    "question": [
+        {
+            "text": "James wanted to get away from the summer ( ), so he went to a small town in the mountains. He was happy because it was much cooler there.",
+            "options": [
+                "leisure",
+                "network",
+                "heat",
+                "order"
+            ],
+            "answer": "heat"
+        },
+        {
+            "text": "Shawna's cookies did not taste as sweet as she had hoped. Next time, she will put a larger ( ) of sugar in them.",
+            "options": [
+                "ground",
+                "honor",
+                "amount",
+                "direction"
+            ],
+            "answer": "amount"
+        },
+        {
+            "text": "For the ( ) of passengers, there are signs that tell them not to run onto the train when the doors are closing.",
+            "options": [
+                "enemy",
+                "enemy",
+                "property",
+                "safety"
+            ],
+            "answer": "safety"
+        },
+        {
+            "text": "A: You're really good at riding your skateboard. How did you learn to do it?<br>B: First, my brother taught me some basic ( ). After that, I learned by watching videos online.",
+            "options": [
+                "responses",
+                "continents",
+                "techniques",
+                "statues"
+            ],
+            "answer": "techniques"
+        },
+        {
+            "text": "A: Excuse me. Can you tell me how to get into your restaurant?<br>B: Sure. Just ( ) the door. It's a little heavy.",
+            "options": [
+                "pull",
+                "chew",
+                "receive",
+                "paste"
+            ],
+            "answer": "pull"
+        },
+        {
+            "text": "Wendy and Amanda had fun ( ) their brother in the sand at the beach. He looked funny with just his face above the sand, and he could not stop laughing, too.",
+            "options": [
+                "arguing",
+                "promoting",
+                "insisting",
+                "burying"
+            ],
+            "answer": "burying"
+        },
+        {
+            "text": "It was really hot on Saturday, so Taro went to his town's swimming pool. The water is cool and ( ), and he always feels better after a swim.",
+            "options": [
+                "frequent",
+                "refreshing",
+                "independent",
+                "electrical"
+            ],
+            "answer": "refreshing"
+        },
+        {
+            "text": "Many people ( ) doctors because they spend their lives helping others.",
+            "options": [
+                "produce",
+                "occupy",
+                "respect",
+                "mention"
+            ],
+            "answer": "respect"
+        },
+        {
+            "text": "The meeting went ( ). Everyone agreed on the same things, so there was no need for the leader to spend extra time talking.",
+            "options": [
+                "heavily",
+                "brightly",
+                "smoothly",
+                "rarely"
+            ],
+            "answer": "smoothly"
+        },
+        {
+            "text": "When Hannah saw smoke coming from the windows of the building, she ( ) immediately. She called the fire department on her phone.",
+            "options": [
+                "took action",
+                "took place",
+                "turned down",
+                "turned on"
+            ],
+            "answer": "took action"
+        },
+        {
+            "text": "A: Please don't go yet, Dad. I want to talk to you about something.<br>B: I'll be back ( ). I just want to get a cup of coffee.",
+            "options": [
+                "by the time",
+                "at present",
+                "in a minute",
+                "for long"
+            ],
+            "answer": "in a minute"
+        },
+        {
+            "text": "Dawn and her new boyfriend have a lot ( ). They both love reading, hiking, and traveling, and they both work in the same kind of job.",
+            "options": [
+                "at fault",
+                "on hand",
+                "in common",
+                "by heart"
+            ],
+            "answer": "in common"
+        },
+        {
+            "text": "At first, the weather report said that the storm would ( ) a typhoon. However, the storm got weaker and only became a tropical storm.",
+            "options": [
+                "turn into",
+                "break down",
+                "come across",
+                "make with"
+            ],
+            "answer": "turn into"
+        },
+        {
+            "text": "A: Sorry I'm late, Jane.<br>B: It doesn't matter, Tom. We can ( ) the others after we've had our lunch.",
+            "options": [
+                "catch up with",
+                "get away with",
+                "come down with",
+                "throw away with"
+            ],
+            "answer": "catch up with"
+        }
+    ]
+}

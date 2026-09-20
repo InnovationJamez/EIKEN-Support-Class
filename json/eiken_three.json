@@ -1,0 +1,154 @@
+{
+    "question": [
+        {
+            "text": "A: Mom, I ate my sandwich, but I'm still hungry.<br> B: OK. Wait a minute. I'll make you ( ) one.",
+            "options": [
+                "another",
+                "near",
+                "every",
+                "much"
+            ],
+            "answer": "another"
+        },
+        {
+            "text": "A: Do you know where the library is?<nr>B: It's ( ) the post office.",
+            "options": [
+                "during",
+                "of",
+                "until",
+                "beside"
+            ],
+            "answer": "beside"
+        },
+        {
+            "text": "( ) by scientists shows that global warming is a big problem.",
+            "options": [
+                "Research",
+                "Energy",
+                "Environment",
+                "Danger"
+            ],
+            "answer": "Research"
+        },
+        {
+            "text": "John has an ( ) tomorrow. He hopes to get a new job.",
+            "options": [
+                "interview",
+                "airport",
+                "example",
+                "excuse"
+            ],
+            "answer": "interview"
+        },
+        {
+            "text": "The road was closed yesterday because there was an ( ).",
+            "options": [
+                "accident",
+                "appointment",
+                "apartment",
+                "address"
+            ],
+            "answer": "accident"
+        },
+        {
+            "text": "A: What should I do with this ( ) bottle? B: We can recycle it.",
+            "options": [
+                "glad",
+                "empty",
+                "different",
+                "serious"
+            ],
+            "answer": "empty"
+        },
+        {
+            "text": "This morning, Pat took a ( ) medicine for his stomachache, but it didn't get better. He took some more later.",
+            "options": [
+                "little",
+                "lot",
+                "most",
+                "much"
+            ],
+            "answer": "little"
+        },
+        {
+            "text": "A: Can you ( ) down the radio, please?<br> B: OK.",
+            "options": [
+                "turn",
+                "get",
+                "go",
+                "make"
+            ],
+            "answer": "turn"
+        },
+        {
+            "text": "A: Where do you want to meet, Kate?<br> B: Let's meet ( ) front of the flower shop.",
+            "options": [
+                "on",
+                "for",
+                "in",
+                "to"
+            ],
+            "answer": "in"
+        },
+        {
+            "text": "Mr. Ford often buys a newspaper at the station in the morning ( ) his way to work.",
+            "options": [
+                "at",
+                "by",
+                "on",
+                "to"
+            ],
+            "answer": "on"
+        },
+        {
+            "text": "A: Good luck, Jim. Do your ( ) in the baseball game.<br>B: I will, Dad.",
+            "options": [
+                "best",
+                "widest",
+                "longest",
+                "deepest"
+            ],
+            "answer": "best"
+        },
+        {
+            "text": "Mr. Jones has a meeting at 5:00. He has to leave ( ) now.",
+            "options": [
+                "right",
+                "some",
+                "very",
+                "also"
+            ],
+            "answer": "right"
+        },
+        {
+            "text": "A: Was this picture ( ) in Australia?<br>B: Yes. My father sent it to me when he was working there.",
+            "options": [
+                "take",
+                "took",
+                "taking",
+                "taken"
+            ],
+            "answer": "taken"
+        },
+        {
+            "text": "A: Mom, have you ( ) the mail yet today?<br>B: Yes. You got a letter from Aunt Jen.",
+            "options": [
+                "check",
+                "checking",
+                "to check",
+                "checked"
+            ],
+            "answer": "checked"
+        },
+        {
+            "text": "A: Was it hot in Vancouver during your trip?<br>B: No, it was ( ) than my hometown.",
+            "options": [
+                "cooling",
+                "cooler",
+                "coolest",
+                "cool"
+            ],
+            "answer": "cooler"
+        }
+    ]
+}

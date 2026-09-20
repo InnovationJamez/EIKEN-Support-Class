@@ -1,0 +1,411 @@
+{
+    "question": [
+        {
+            "text": "A : What's Mike doing now?<br> B : He's ( ) his dog in the garden.",
+            "options": [
+                "reading",
+                "washing",
+                "making",
+                "sitting"
+            ],
+            "answer": "washing"
+        },
+        {
+            "text": "It's very cold, Billy. ( ) a coat today.",
+            "options": [
+                "Listen",
+                "Wear",
+                "See",
+                "Watch"
+            ],
+            "answer": "Wear"
+        },
+        {
+            "text": "A : What's your favorite color, Amy?<br> B : It's ( ).",
+            "options": [
+                "clean",
+                "brown",
+                "tall",
+                "hard"
+            ],
+            "answer": "brown"
+        },
+        {
+            "text": "I have a photo ( ). I have many pictures of my family in it.",
+            "options": [
+                "album",
+                "pen",
+                "sun",
+                "dog"
+            ],
+            "answer": "album"
+        },
+        {
+            "text": "My brother and I ( ) to school by bus every day.",
+            "options": [
+                "talk",
+                "eat",
+                "see",
+                "come"
+            ],
+            "answer": "come"
+        },
+        {
+            "text": "Henry is a ( ). He plays the guitar and the piano.",
+            "options": [
+                "rabbit",
+                "musician",
+                "jacket",
+                "team"
+            ],
+            "answer": "musician"
+        },
+        {
+            "text": "A : Hi, Jane. Where is Ken?<br> B : He's in the ( ).",
+            "options": [
+                "watch",
+                "gym",
+                "banana",
+                "night"
+            ],
+            "answer": "gym"
+        },
+        {
+            "text": "I love basketball. I often watch basketball games ( ) TV with my brother.",
+            "options": [
+                "of",
+                "on",
+                "at",
+                "in"
+            ],
+            "answer": "on"
+        },
+
+
+        {
+            "text": "Tom has a ( ) of coffee every morning before he goes to school.",
+            "options": [
+                "corn",
+                "floor",
+                "window",
+                "cup"
+            ],
+            "answer": "cup"
+        },
+        {
+            "text": "A : Do you play basketball, Bob?<br> B : Yes, a ( ).",
+            "options": [
+                "little",
+                "beautiful",
+                "fast",
+                "much"
+            ],
+            "answer": "little"
+        },
+        {
+            "text": "I get ( ) early every morning and go to the park.",
+            "options": [
+                "on",
+                "up",
+                "over",
+                "right"
+            ],
+            "answer": "up"
+        },
+        {
+            "text": "Janet ( ) swimming every Sunday with her sister.",
+            "options": [
+                "goes",
+                "asks",
+                "buys",
+                "drinks"
+            ],
+            "answer": "goes"
+        },
+        {
+            "text": "Mom, can I ( ) a letter to Uncle Rob this afternoon?",
+            "options": [
+                "writes",
+                "wrote",
+                "write",
+                "writing"
+            ],
+            "answer": "write"
+        },
+        {
+            "text": "I know Tim and Lucy. ( ) are Canadian.",
+            "options": [
+                "He",
+                "They",
+                "It",
+                "You"
+            ],
+            "answer": "They"
+        },
+        {
+            "text": "A : It's hot. Please ( ) the window.<br> B : OK, Mom.",
+            "options": [
+                "opens",
+                "open",
+                "opening",
+                "opened"
+            ],
+            "answer": "open"
+        },
+        {
+            "text": "Boy : Do you have any sisters?<br> Girl : No, but ()",
+            "options": [
+                "it's my birthday.",
+                "I have two brothers.",
+                "this is my room.",
+                "I like tennis."
+            ],
+            "answer": "I have two brothers."
+        },
+        {
+            "text": "Boy : What's the date today?<br>Mother : ()",
+            "options": [
+                "It's April 29.",
+                "It's nine o'clock.",
+                "I love spring.",
+                "Next Monday."
+            ],
+            "answer": "It's April 29."
+        },
+        {
+            "text": "Girl : What do you do on weekends, Bob?<br>Boy : ()",
+            "options": [
+                "No, I don't.",
+                "Good idea.",
+                "I play soccer.",
+                "Sorry, I can't."
+            ],
+            "answer": "I play soccer."
+        },
+        {
+            "text": "Boy 1 : Let's play badminton at the park, Brad.<br>Boy 2 : ()",
+            "options": [
+                "Yes, let's.",
+                "Yes, I am.",
+                "It's you.",
+                "It's short."
+            ],
+            "answer": "Yes, let's."
+        },
+        {
+            "text": "Teacher : Hi, I'm Tom. I'm your new English teacher.<br> Girl : Hello, Tom. ()",
+            "options": [
+                "I think so.",
+                "You're welcome.",
+                "I do, too.",
+                "Nice to meet you."
+            ],
+            "answer": "Nice to meet you."
+        },
+
+
+
+
+
+        {
+            "text": "A : Yuka, let's sit down on the ( ) and watch TV.<br> B : OK.",
+            "options": [
+                "drink",
+                "floor",
+                "jump",
+                "breakfast"
+            ],
+            "answer": "floor"
+        },
+        {
+            "text": "Mr. Hara has a big ( ) in his garden. It has many oranges.",
+            "options": [
+                "plate",
+                "fork",
+                "kitchen",
+                "tree"
+            ],
+            "answer": "tree"
+        },
+        {
+            "text": "A : Mom, I don't know this word. Can you help me?<br>B : No, I can't. Use your ( ), Tom.",
+            "options": [
+                "page",
+                "cup",
+                "dictionary",
+                "story"
+            ],
+            "answer": "dictionary"
+        },
+        {
+            "text": "Mr. Brown is a music teacher. He plays the ( ) very well.",
+            "options": [
+                "trumpet",
+                "cup",
+                "clock",
+                "pencil"
+            ],
+            "answer": "trumpet"
+        },
+        {
+            "text": "A : This is my new computer.<br>B : It's ( ). I want one, too.",
+            "options": [
+                "great",
+                "cloudy",
+                "sure",
+                "delicious"
+            ],
+            "answer": "great"
+        },
+        {
+            "text": "Sally has a smart dog. He can stand and ( ) a ball.",
+            "options": [
+                "eat",
+                "catch",
+                "cook",
+                "buy"
+            ],
+            "answer": "catch"
+        },
+        {
+            "text": "A : Mom, please ( ) sandwiches for lunch.<br>B : OK, John.",
+            "options": [
+                "know",
+                "make",
+                "sit",
+                "study"
+            ],
+            "answer": "make"
+        },
+        {
+            "text": "A : I have a cold, so I can't play soccer with you today.<br>B : I ( ). That's OK.",
+            "options": [
+                "am",
+                "do",
+                "see",
+                "love"
+            ],
+            "answer": "see"
+        },
+        {
+            "text": "A : ( ) me. Where's the bathroom?<br>B : It's over there.",
+            "options": [
+                "Begin",
+                "Know",
+                "Call",
+                "Excuse"
+            ],
+            "answer": "Excuse"
+        },
+        {
+            "text": "A : Goodbye, David.<br>B : Bye, Sam. ( ) a good day.",
+            "options": [
+                "Help",
+                "Take",
+                "Have",
+                "Hear"
+            ],
+            "answer": "Have"
+        },
+        {
+            "text": "A : Welcome ( ) our sports club, Paul.<br>B : Thank you, Mr. Johnson.",
+            "options": [
+                "on",
+                "of",
+                "for",
+                "to"
+            ],
+            "answer": "to"
+        },
+        {
+            "text": "I play basketball ( ) school. My brother and my friend play, too.",
+            "options": [
+                "from",
+                "at",
+                "of",
+                "with"
+            ],
+            "answer": "at"
+        },
+        {
+            "text": "Jack ( ) a junior high school student. He goes to a high school.",
+            "options": [
+                "aren't",
+                "doesn't",
+                "isn't",
+                "don't"
+            ],
+            "answer": "isn't"
+        },
+        {
+            "text": "A : This dress is very nice. ( ) is it?<br>B : It's my mother's.",
+            "options": [
+                "Who",
+                "Where",
+                "Whose",
+                "When"
+            ],
+            "answer": "Whose"
+        },
+        {
+            "text": "A : Bill, let's ( ) the homework together.<br> B : OK, Maria.",
+            "options": [
+                "check",
+                "checked",
+                "checks",
+                "checking"
+            ],
+            "answer": "check"
+        },
+        {
+            "text": "Boy : Where are my pajamas, Mom?<br>Mother : ()",
+            "options": [
+                "It's big.",
+                "Five dollars.",
+                "On your bed.",
+                "After dinner."
+            ],
+            "answer": "On your bed."
+        },
+        {
+            "text": "Mother : What drink do you want?<br>Girl : ()",
+            "options": [
+                "Two eggs.",
+                "Yes, at night.",
+                "Orange juice, please.",
+                "Every weekend."
+            ],
+            "answer": "Orange juice, please."
+        },
+        {
+            "text": "Girl : Allan, your pink T-shirt is nice.<br>Boy : () Brenda.",
+            "options": [
+                "Thanks,",
+                "Good job,",
+                "You're welcome,",
+                "They're interesting,"
+            ],
+            "answer": "Thanks,"
+        },
+        {
+            "text": "Girl : When do you study English, Taro?<br>Boy : () Then I watch TV.",
+            "options": [
+                "I like it.",
+                "In my room.",
+                "After dinner.",
+                "For three hours."
+            ],
+            "answer": "For three hours."
+        },
+        {
+            "text": "Boy : Can you come to my house today, Lisa?<br>Girl : No, I can't. ()",
+            "options": [
+                "That's a good idea.",
+                "I have a violin lesson.",
+                "Come in, please.",
+                "It's not mine."
+            ],
+            "answer": "I have a violin lesson."
+        }
+    ]
+}

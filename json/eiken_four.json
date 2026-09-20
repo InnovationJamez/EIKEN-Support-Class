@@ -1,0 +1,404 @@
+{
+    "question": [
+        {
+            "text": "Kentaro wants to be a ( ) baseball player in the future. He wants to play in the United States someday.",
+            "options": [
+                "difficult",
+                "professional",
+                "strange",
+                "thick"
+            ],
+            "answer": "professional"
+        },
+        {
+            "text": "It'll rain this evening, Peter. Don't forget your ( ).",
+            "options": [
+                "umbrella",
+                "dream",
+                "mirror",
+                "sandwich"
+            ],
+            "answer": "umbrella"
+        },
+        {
+            "text": "Yuta loves flying. He often goes to the ( ) to watch the planes.",
+            "options": [
+                "floor",
+                "hospital",
+                "airport",
+                "mall"
+            ],
+            "answer": "airport"
+        },
+        {
+            "text": "Takeru's bag has many large books in it. It is very ( ), so Takeru can't carry it.",
+            "options": [
+                "heavy",
+                "nervous",
+                "late",
+                "fast"
+            ],
+            "answer": "heavy"
+        },
+        {
+            "text": "Yumi visited a ( ) last weekend. She likes learning about history.",
+            "options": [
+                "dictionary",
+                "question",
+                "castle",
+                "cloud"
+            ],
+            "answer": "castle"
+        },
+        {
+            "text": "Peter grows potatoes in his ( ). He also has an apple tree.",
+            "options": [
+                "cake",
+                "song",
+                "meat",
+                "garden"
+            ],
+            "answer": "garden"
+        },
+        {
+            "text": "Last week, Brian ( ) a cold. He stayed in bed for two days.",
+            "options": [
+                "caught",
+                "told",
+                "forgot",
+                "played"
+            ],
+            "answer": "caught"
+        },
+        {
+            "text": "It was very hot during soccer practice. After practice, Jeff drank a ( ) of water.",
+            "options": [
+                "glass",
+                "boat",
+                "country",
+                "floor"
+            ],
+            "answer": "glass"
+        },
+        {
+            "text": "Last week, a new student came to Lucy's school. Lucy became good friends ( ) him because they both love sports.",
+            "options": [
+                "with",
+                "through",
+                "by",
+                "into"
+            ],
+            "answer": "with"
+        },
+        {
+            "text": "Kate can ( ) very well. She's on the school swimming team.",
+            "options": [
+                "swam",
+                "swim",
+                "swims",
+                "to swim"
+            ],
+            "answer": "swim"
+        },
+        {
+            "text": "A : Do you know any good sports websites?<br>B : Yes. This website is very ( ).",
+            "options": [
+                "quiet",
+                "thirsty",
+                "tall",
+                "useful"
+            ],
+            "answer": "useful"
+        },
+        {
+            "text": "A : Did you like the book, Andy?<br> B : Well, the first ( ) of the book was interesting, but the ending wasn't very good.",
+            "options": [
+                "country",
+                "part",
+                "way",
+                "road"
+            ],
+            "answer": "part"
+        },
+        {
+            "text": "A : In our cooking class, we help each ( ) when we cook.<br>B : Yes, we do. That's important.",
+            "options": [
+                "any",
+                "some",
+                "other",
+                "another"
+            ],
+            "answer": "other"
+        },
+        {
+            "text": "A : Can I eat some food now, Mom?<br>B : Yes, but you ( ) wash your hands first.",
+            "options": [
+                "must",
+                "are",
+                "have",
+                "were"
+            ],
+            "answer": "must"
+        },
+        {
+            "text": "Last night, Taro was ( ) a movie about airplanes. He liked it very much.",
+            "options": [
+                "watching",
+                "watches",
+                "watch",
+                "watched"
+            ],
+            "answer": "watching"
+        },
+        {
+            "text": "Woman 1 : I went to a party this weekend.<br>Woman 2 : ( )<br>Woman 1 : My new dress.",
+            "options": [
+                "What time does it open?",
+                "What did you wear?",
+                "How many people were there?",
+                "Can you teach me?"
+            ],
+            "answer": "What did you wear?"
+        },
+        {
+            "text": "Boy : Did you bring your soccer ball?<br>Girl : ( ) but I'll bring it tomorrow.",
+            "options": [
+                "Not today,",
+                "I like P.E.,",
+                "Wait a minute,",
+                "You played well,"
+            ],
+            "answer": "Not today,"
+        },
+        {
+            "text": "Girl 1 : We should go to the science room now.<br>Girl 2 : ( ) I have to get my notebook from my locker first.",
+            "options": [
+                "Bring it tomorrow.",
+                "Wait for me.",
+                "In my desk.",
+                "For my teacher."
+            ],
+            "answer": "Wait for me."
+        },
+        {
+            "text": "Man : Excuse me. Is there a subway station near here?<br>Woman : ( ) It's about five minutes from here.",
+            "options": [
+                "I don't have a watch.",
+                "I bought a new bicycle.",
+                "I lost my ticket.",
+                "There's one by the stadium."
+            ],
+            "answer": "There's one by the stadium."
+        },
+        {
+            "text": "Brother : Can you get my book, Mary? It's on the table. Sister : Sure. ( )",
+            "options": [
+                "Just a minute.",
+                "I'll buy it.",
+                "That's all.",
+                "It's not mine."
+            ],
+            "answer": "Just a minute."
+        },
+        {
+            "text": "Last night, Paul studied with his sister. She couldn't ( ) her homework, so Paul helped her.",
+            "options": [
+                "wash",
+                "understand",
+                "play",
+                "open"
+            ],
+            "answer": "understand"
+        },
+        {
+            "text": "A : Is your train () to Osaka in your pocket?<br> B : No, it's on the table.",
+            "options": [
+                "car",
+                "pencil",
+                "shirt",
+                "ticket"
+            ],
+            "answer": "ticket"
+        },
+        {
+            "text": "Helen's tennis lesson will ( ) at five o'clock on Saturday.",
+            "options": [
+                "take",
+                "end",
+                "put",
+                "make"
+            ],
+            "answer": "end"
+        },
+        {
+            "text": "A : Did you see the () on TV, Mom? A giraffe at the zoo had a baby.<br>B : Yes, I saw it. It was so cute.",
+            "options": [
+                "news",
+                "weather",
+                "sport",
+                "bag"
+            ],
+            "answer": "news"
+        },
+        {
+            "text": "A : What does your brother do, Ms. Brown? B : He's a ( ) student. He studies computer science.",
+            "options": [
+                "towel",
+                "mistake",
+                "college",
+                "station"
+            ],
+            "answer": "college"
+        },
+        {
+            "text": "After the big game yesterday, the soccer team was very happy. Today is a ( ), so the players can relax.",
+            "options": [
+                "holiday",
+                "bank",
+                "friend",
+                "pool"
+            ],
+            "answer": "holiday"
+        },
+        {
+            "text": "A : When will you () cleaning your room?<br>B : By six o'clock.",
+            "options": [
+                "visit",
+                "finish",
+                "remember",
+                "leave"
+            ],
+            "answer": "finish"
+        },
+        {
+            "text": "The library is open ( ) nine to seven. Many people go there in the morning.",
+            "options": [
+                "among",
+                "from",
+                "over",
+                "with"
+            ],
+            "answer": "from"
+        },
+        {
+            "text": "A : Mom, I'm having () with my homework. B : OK, I'll help you with it.",
+            "options": [
+                "action",
+                "type",
+                "world",
+                "trouble"
+            ],
+            "answer": "trouble"
+        },
+        {
+            "text": "Mr. Smith usually ( ) the housework on Sunday mornings. After that, he likes to read magazines.",
+            "options": [
+                "does",
+                "uses",
+                "holds",
+                "gives"
+            ],
+            "answer": "does"
+        },
+        {
+            "text": "A : Bye, Mom. Dan and I are going to a party. B : OK, have a good ( ).",
+            "options": [
+                "job",
+                "help",
+                "time",
+                "taste"
+            ],
+            "answer": "time"
+        },
+        {
+            "text": "Daniel is fourteen years ( ). He is very good at sports.",
+            "options": [
+                "old",
+                "light",
+                "big",
+                "short"
+            ],
+            "answer": "old"
+        },
+        {
+            "text": "Henry ( ) home from school early yesterday because he was sick.",
+            "options": [
+                "came",
+                "comes",
+                "come",
+                "coming"
+            ],
+            "answer": "came"
+        },
+        {
+            "text": "A : Many of the buildings in this city are very big. B : Yes, but this one is the ( ).",
+            "options": [
+                "large",
+                "largest",
+                "larger",
+                "too large"
+            ],
+            "answer": "largest"
+        },
+        {
+            "text": "A : What's your town like, Tom? B : It's nice. ( ) are lots of parks and a big pool.",
+            "options": [
+                "They",
+                "Those",
+                "There",
+                "Their"
+            ],
+            "answer": "There"
+        },
+        {
+            "text": "Daughter : Can I go outside to play now?<br>Father : No, ( )",
+            "options": [
+                "wash the dishes first.",
+                "have fun.",
+                "I don't like it very much.",
+                "it's not yours."
+            ],
+            "answer": "wash the dishes first."
+        },
+        {
+            "text": "Son : I'm going to make some rice balls for the picnic. ( )<br>Mother : About five or six.",
+            "options": [
+                "How many should I make?",
+                "What did you make?",
+                "Do you like them?",
+                "Are you good at cooking?"
+            ],
+            "answer": "How many should I make?"
+        },
+        {
+            "text": "Mother : Do you want some more pizza, Daniel?<br>Son : Yes, ( )",
+            "options": [
+                "I want to cook dinner.",
+                "I can't eat it.",
+                "I don't think so.",
+                "I'm really hungry."
+            ],
+            "answer": "I'm really hungry."
+        },
+        {
+            "text": "Man : ( ) Susan. How was your camping trip?<br>Woman : It was wonderful.",
+            "options": [
+                "Good luck,",
+                "Welcome back,",
+                "Have a good day,",
+                "Not at all,"
+            ],
+            "answer": "Welcome back,"
+        },
+        {
+            "text": "Boy : I always do well in math class. ( ) Girl : Oh, can you study with me? Maybe you can help me.",
+            "options": [
+                "I like history.",
+                "It's easy.",
+                "It's really short.",
+                "She's my teacher."
+            ],
+            "answer": "It's easy."
+        }
+    ]
+}
