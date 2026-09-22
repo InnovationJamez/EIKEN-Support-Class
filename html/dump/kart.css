@@ -1,0 +1,358 @@
+body, html {
+    -webkit-user-select: none;
+    /* Chrome, Safari, Opera */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Standard syntax */
+
+    touch-action: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+#backImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hide-box {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hide-box-inner {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+start screen
+*/
+
+
+#titleImg {
+    height: 60%;
+    margin: auto;
+    display: block;
+}
+
+#startBtn {
+    background-image: url('./res/img/text/start.gif');
+    background-size: 100% 100%;
+    height: 35%;
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+/*
+ chose difficulty box
+*/
+
+#diffText {
+    height: 40%;
+    width: 100%;
+}
+
+#diffText img {
+    height: 100%;
+    width: 100%;
+}
+
+/*
+number screen
+*/
+
+.selectRadio {
+    display: none;
+}
+
+#howManyText {
+    width: 100%;
+    height: 40%;
+}
+
+#numberSelectBox {
+    height: 15%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.selectLabel {
+    border-radius: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    width: 25%;
+    filter: grayscale(50);
+}
+
+.selectLabel img {
+    height: 150%;
+}
+
+.selectRadio:checked+.selectLabel {
+    background-color: green;
+    border: 5px solid black;
+     filter: grayscale(0);
+}
+
+.selectRadio:checked+.selectLabel img {
+    height: 200%;
+}
+
+#nmbrEntrBtn {
+    margin: auto;
+    display: block;
+    width: 50%;
+    height: 20%;
+}
+
+
+/*
+character select screen
+*/
+
+#textBox {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#textBox img{
+    height: 100%;
+}
+
+#charCon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 2%;
+}
+
+#charCon div {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+}
+
+.char-check {
+    display: none;
+}
+
+.char-check-label {
+    width: 12.5%;
+}
+
+.char-check-label img {
+    width: 100%;
+    height: 100%;
+}
+
+.char-check:checked+label {
+    background-color: rgba(56, 170, 56, 0.8);
+    filter:drop-shadow(1);
+}
+
+.char-check:disabled+label {
+    background-color: rgba(0, 0, 0, 0.8);
+    filter: grayscale(0.2);
+}
+
+#pickCharBtn {
+    height: 20%;
+}
+
+#charEntrBtn {
+    margin: auto;
+    display: block;
+    height: 100%
+}
+
+#charEntrBtn img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*
+dice screen
+*/
+
+
+#diceTextBox {
+    width: 100;
+    height: 20%;
+}
+
+#diceTextBox img {
+    height: 100%;
+}
+
+#diceResultCon {
+    height: 60%;
+}
+
+#diceResultImg {
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+
+#diceButtons {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#rollBtn, #rollNextBtn {
+    height: 100%;
+    display: block;
+    width: 50%;
+}
+
+
+#rollBtn img, #rollNextBtn img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*
+question screen
+*/
+
+#questTextBox {
+    height: 40%;
+}
+
+#questAnswerBox {
+    height: 60%;
+}
+
+#questBtnBox {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+#questBtnCon button {
+    font-size: 2rem;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#nextBtn, #itemBtn {
+    width: 50%;
+    height: 100%;
+}
+
+#nextBtn img, #itemBtn img{
+    width: 100%;
+    height: 100%;
+}
+
+/*
+item screen
+*/
+
+#powerUpText {
+    height: 30%;
+}
+
+#powerUpText img {
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+#powerUpBox {
+    height: 50%;
+}
+
+#powerUpBox img {
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+#powerUpBtns {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+#powerUpBtns button {
+    height: 100%;
+    width: 50%;
+}
+
+#powerUpBtns button img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*
+hide
+*/
+
+.hide {
+    visibility: collapse;  
+}
+
+/*
+end screen
+*/
+
+#endWinText {
+    height: 30%;
+}
+
+#endWinImgBox {
+    height: 50%;
+}   
+
+#endWinImgBox img, #endWinText img,#endWinBtn button {
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+
+#endWinBtn {
+    height: 20%;
+}
