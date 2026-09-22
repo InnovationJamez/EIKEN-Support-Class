@@ -13,14 +13,14 @@
 <body>
     <!-- board and chararacter draw screen -->
 
-    <img draggable="false" src="./res/img/board/new.png" id="backImg" alt="back img">
+    <img draggable="false" src="../../img/board/new.png" id="backImg" alt="back img">
     <canvas id="canvas"></canvas>
 
     <!-- start screen-->
 
     <div id="startBox" class="hide-box">
         <div class="hide-box-inner">
-            <img draggable="false" id="titleImg" src="./res/img/text/title.png" alt="">
+            <img draggable="false" id="titleImg" src="../../img/text/title.png" alt="">
             <button id="startBtn"></button>
         </div>
     </div>
@@ -30,40 +30,40 @@
     <div id="levelBox" class="hide-box hide">
         <div class="hide-box-inner">
             <div id="diffText">
-                <img draggable="false" src="./res/img/text/Select-Difficulty-5-2-2026.png" alt="">
+                <img draggable="false" src="../../img/text/Select-Difficulty-5-2-2026.png" alt="">
             </div>
             <div id="numberSelectBox">
                 <input class="selectRadio" type="radio" id="level0" name="teamNumb">
                 <label onclick="playPop()" class="selectLabel" for="level0">
-                    <img draggable="false" src="./res/img/number/five.png" alt="5">
+                    <img draggable="false" src="../../img/number/five.png" alt="5">
                 </label>
 
                 <input class="selectRadio" type="radio" id="level1" name="teamNumb">
                 <label onclick="playPop()" class="selectLabel" for="level1">
-                    <img draggable="false" src="./res/img/number/four.png" alt="4">
+                    <img draggable="false" src="../../img/number/four.png" alt="4">
                 </label>
 
                 <input class="selectRadio" type="radio" id="level2" name="teamNumb">
                 <label onclick="playPop()" class="selectLabel" for="level2">
-                    <img draggable="false" src="./res/img/number/three.png" alt="3">
+                    <img draggable="false" src="../../img/number/three.png" alt="3">
                 </label>
 
                 <input class="selectRadio" type="radio" id="level3" name="teamNumb">
                 <label onclick="playPop()" class="selectLabel" for="level3">
-                    <img draggable="false" src="./res/img/text/p2.png" alt="p2">
+                    <img draggable="false" src="../../img/text/p2.png" alt="p2">
                 </label>
 
                 <input class="selectRadio" type="radio" id="level4" name="teamNumb">
                 <label onclick="playPop()" class="selectLabel" for="level4">
-                    <img draggable="false" src="./res/img/text/p2p.png" alt="p2p">
+                    <img draggable="false" src="../../img/text/p2p.png" alt="p2p">
                 </label>
 
                 <input class="selectRadio" type="radio" id="level5" name="teamNumb">
                 <label onclick="playPop()" class="selectLabel" for="level5">
-                    <img draggable="false" src="./res/img/number/two.png" alt="2">
+                    <img draggable="false" src="../../img/number/two.png" alt="2">
                 </label>
             </div>
-            <button id="lvlEntrBtn"><img draggable="false" src="./res/img/text/enter.png" alt=""></button>
+            <button id="lvlEntrBtn"><img draggable="false" src="../../img/text/enter.png" alt=""></button>
         </div>
     </div>
 
@@ -72,34 +72,34 @@
     -->
     <div id="numberBox" class="hide-box hide">
         <div class="hide-box-inner">
-            <img draggable="false" id="howManyText" src="./res/img/text/how-many-teams.png" alt="how many teams">
+            <img draggable="false" id="howManyText" src="../../img/text/how-many-teams.png" alt="how many teams">
             <div id="numberSelectBox">
                 <input class="selectRadio" type="radio" id="teamNumb2" name="teamNumb">
                 <label onclick="playPop()" class="selectLabel" for="teamNumb2">
-                    <img draggable="false" src="./res/img/number/two.png" alt="2">
+                    <img draggable="false" src="../../img/number/two.png" alt="2">
                 </label>
 
                 <input class="selectRadio" type="radio" id="teamNumb3" name="teamNumb">
                 <label onclick="playPop()" class="selectLabel" for="teamNumb3">
-                    <img draggable="false" src="./res/img/number/three.png" alt="3">
+                    <img draggable="false" src="../../img/number/three.png" alt="3">
                 </label>
 
                 <input class="selectRadio" type="radio" id="teamNumb4" name="teamNumb">
                 <label onclick="playPop()" class="selectLabel" for="teamNumb4">
-                    <img draggable="false" src="./res/img/number/four.png" alt="4">
+                    <img draggable="false" src="../../img/number/four.png" alt="4">
                 </label>
 
                 <input class="selectRadio" type="radio" id="teamNumb5" name="teamNumb">
                 <label onclick="playPop()" class="selectLabel" for="teamNumb5">
-                    <img draggable="false" src="./res/img/number/five.png" alt="5">
+                    <img draggable="false" src="../../img/number/five.png" alt="5">
                 </label>
 
                 <input class="selectRadio" type="radio" id="teamNumb6" name="teamNumb">
                 <label onclick="playPop()" class="selectLabel" for="teamNumb6">
-                    <img draggable="false" src="./res/img/number/six.png" alt="5">
+                    <img draggable="false" src="../../img/number/six.png" alt="5">
                 </label>
             </div>
-            <button id="nmbrEntrBtn"><img src="./res/img/text/enter.png" alt=""></button>
+            <button id="nmbrEntrBtn"><img src="../../img/text/enter.png" alt=""></button>
         </div>
     </div>
 
@@ -109,67 +109,67 @@
     <div id="charBox" class="hide-box hide">
         <div class="hide-box-inner">
             <div id="textBox">
-                <img draggable="false" src="./res/img/text/team.png" alt="team">
-                <img draggable="false" id="selectIndexNumber" src="./res/img/number/one.png" alt="number">
-                <img draggable="false" src="./res/img/text/select-character.png" alt="pick a character">
+                <img draggable="false" src="../../img/text/team.png" alt="team">
+                <img draggable="false" id="selectIndexNumber" src="../../img/number/one.png" alt="number">
+                <img draggable="false" src="../../img/text/select-character.png" alt="pick a character">
             </div>
             <div id="charCon">
                 <div>
                     <input name="char-select" type="radio" id="boo" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="boo"><img draggable="false"
-                            src="./res/img/character/boo.png"></label>
+                            src="../../img/character/boo.png"></label>
                     <input name="char-select" type="radio" id="bowser" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="bowser"><img draggable="false"
-                            src="./res/img/character/bowser.png"></label>
+                            src="../../img/character/bowser.png"></label>
                     <input name="char-select" type="radio" id="coupa" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="coupa"><img draggable="false"
-                            src="./res/img/character/coupa.png"></label>
+                            src="../../img/character/coupa.png"></label>
                     <input name="char-select" type="radio" id="curby" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="curby"><img draggable="false"
-                            src="./res/img/character/curby.png"></label>
+                            src="../../img/character/curby.png"></label>
                     <input name="char-select" type="radio" id="donkey-kong" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="donkey-kong"><img draggable="false"
-                            src="./res/img/character/donkey-kong.png"></label>
+                            src="../../img/character/donkey-kong.png"></label>
                     <input name="char-select" type="radio" id="goomba" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="goomba"><img draggable="false"
-                            src="./res/img/character/goomba.png"></label>
+                            src="../../img/character/goomba.png"></label>
                     <input name="char-select" type="radio" id="inkling" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="inkling"><img draggable="false"
-                            src="./res/img/character/inkling.png"></label>
+                            src="../../img/character/inkling.png"></label>
                     <input name="char-select" type="radio" id="link" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="link"><img draggable="false"
-                            src="./res/img/character/link.png"></label>
+                            src="../../img/character/link.png"></label>
 
                 </div>
                 <div>
                     <input name="char-select" type="radio" id="luigi" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="luigi"><img draggable="false"
-                            src="./res/img/character/luigi.png"></label>
+                            src="../../img/character/luigi.png"></label>
                     <input name="char-select" type="radio" id="mario" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="mario"><img draggable="false"
-                            src="./res/img/character/mario.png"></label>
+                            src="../../img/character/mario.png"></label>
                     <input name="char-select" type="radio" id="peach" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="peach"><img draggable="false"
-                            src="./res/img/character/peach.png"></label>
+                            src="../../img/character/peach.png"></label>
                     <input name="char-select" type="radio" id="rosalina" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="rosalina"><img draggable="false"
-                            src="./res/img/character/rosalina.png"></label>
+                            src="../../img/character/rosalina.png"></label>
                     <input name="char-select" type="radio" id="toad" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="toad"><img draggable="false"
-                            src="./res/img/character/toad.png"></label>
+                            src="../../img/character/toad.png"></label>
                     <input name="char-select" type="radio" id="walauigi" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="walauigi"><img draggable="false"
-                            src="./res/img/character/walauigi.png"></label>
+                            src="../../img/character/walauigi.png"></label>
                     <input name="char-select" type="radio" id="wario" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="wario"><img draggable="false"
-                            src="./res/img/character/wario.png"></label>
+                            src="../../img/character/wario.png"></label>
                     <input name="char-select" type="radio" id="yoshi" class="char-check">
                     <label onclick="playPop()" class="char-check-label" for="yoshi"><img draggable="false"
-                            src="./res/img/character/yoshi.png"></label>
+                            src="../../img/character/yoshi.png"></label>
                 </div>
             </div>
             <div id="pickCharBtn">
-                <button id="charEntrBtn"><img draggable="false" src="./res/img/text/enter.png" alt=""></button>
+                <button id="charEntrBtn"><img draggable="false" src="../../img/text/enter.png" alt=""></button>
             </div>
         </div>
     </div>
@@ -182,16 +182,16 @@
     <div id="diceBox" class="hide-box hide">
         <div class="hide-box-inner">
             <div id="diceTextBox">
-                <img draggable="false" src="./res/img/text/team.png" alt="team">
-                <img draggable="false" id="diceIndexNumber" src="./res/img/number/one.png" alt="number">
-                <img draggable="false" src="./res/img/text/roll-the-dice-5-2-2026.png" alt="pick a character">
+                <img draggable="false" src="../../img/text/team.png" alt="team">
+                <img draggable="false" id="diceIndexNumber" src="../../img/number/one.png" alt="number">
+                <img draggable="false" src="../../img/text/roll-the-dice-5-2-2026.png" alt="pick a character">
             </div>
             <div id="diceResultCon">
-                <img draggable="false" id="diceResultImg" src="./res/img/item/dice.png" alt="">
+                <img draggable="false" id="diceResultImg" src="../../img/item/dice.png" alt="">
             </div>
             <div id="diceButtons">
-                <button id="rollBtn"><img draggable="false" src="./res/img/text/roll.png" alt=""></button>
-                <button class="hide" id="rollNextBtn"><img draggable="false" src="./res/img/text/next.png" alt=""></button>
+                <button id="rollBtn"><img draggable="false" src="../../img/text/roll.png" alt=""></button>
+                <button class="hide" id="rollNextBtn"><img draggable="false" src="../../img/text/next.png" alt=""></button>
             </div>
         </div>
     </div>
@@ -209,10 +209,10 @@
             </div>
             <div id="questBtnBox">
                 <button class="hide" id="nextBtn">
-                    <img draggable="false" src="./res/img/text/next.png" alt="next">
+                    <img draggable="false" src="../../img/text/next.png" alt="next">
                 </button>
                 <button class="hide" id="itemBtn">
-                    <img draggable="false" src="./res/img/text/power-up.png" alt="item">
+                    <img draggable="false" src="../../img/text/power-up.png" alt="item">
                 </button>
             </div>
         </div>
@@ -224,14 +224,14 @@
     <div id="itemBox" class="hide-box hide">
         <div class="hide-box-inner">
             <div id="powerUpText">
-                <img draggable="false" src="./res/img/text/power-up.png" alt="">
+                <img draggable="false" src="../../img/text/power-up.png" alt="">
             </div>
             <div id="powerUpBox">
-                <img draggable="false" id="powerUpImg" src="./res/img/item/question.png" alt="">
+                <img draggable="false" id="powerUpImg" src="../../img/item/question.png" alt="">
             </div>
             <div id="powerUpBtns">
-                <button id="getItemBtn"><img draggable="false" src="./res/img/text/power-up.png" alt=""></button>
-                <button class="hide" id="nextItemBtn"><img draggable="false" src="./res/img/text/next.png" alt=""></button>
+                <button id="getItemBtn"><img draggable="false" src="../../img/text/power-up.png" alt=""></button>
+                <button class="hide" id="nextItemBtn"><img draggable="false" src="../../img/text/next.png" alt=""></button>
             </div>
         </div>
     </div>
@@ -244,11 +244,11 @@
         <div class="hide-box-inner">
 
             <div id="endWinText">
-                <img draggable="false" src="./res/img/text/winner.png" alt="">
+                <img draggable="false" src="../../img/text/winner.png" alt="">
             </div>
 
             <div id="endWinImgBox">
-                <img draggable="false" id="endWinImg" src="./res/img/character/boo.png" alt="">
+                <img draggable="false" id="endWinImg" src="../../img/character/boo.png" alt="">
             </div>
 
             <div id="endWinBtn">
