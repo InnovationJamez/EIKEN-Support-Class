@@ -289,6 +289,7 @@ window.onload = async function () {
     let playerName = document.querySelector("#playerName");
     let playerImg = document.querySelector("#playerImg");
     let playerTable = document.querySelector("#playerTable");
+    let clsBtn = document.querySelector("#clsBtn");
 
     const updateUI = () => {
         let activePlayer = players[playerIndex];
@@ -361,10 +362,10 @@ window.onload = async function () {
                         let handler = setInterval(()=>{
                             let card = flipList[flipIndex];
                             card.outer.classList.remove('flip');
-                            card.img.src = path;
                             setTimeout(()=>{
+                                card.img.src = path;
                                 card.outer.classList.add('flip');
-                            }, 200)
+                            }, 400)
                             playPop();
                             flipIndex++;
                             if(flipIndex >= flipList.length){
@@ -397,6 +398,11 @@ window.onload = async function () {
         document.querySelector("#levelBox").classList.remove('hide');
     });
 
+    clsBtn.addEventListener('click', ()=>{
+        busy = false;
+        document.querySelector("#questBox").classList.add('hide');
+    });
+
     lvlEntrBtn.addEventListener('click', async () => {
         let level = getLevel();
         if (level == -1) {
@@ -405,7 +411,7 @@ window.onload = async function () {
         //     let data = await getData(FIVE);
         //     console.log(data);
         let quest = await loadQuest(level);
-        questList = quest;
+        questList = quest.sort(()=>Math.random() - 0.5);
         playClick();
         document.querySelector("#levelBox").classList.add('hide');
         document.querySelector("#numberBox").classList.remove('hide');
@@ -451,7 +457,5 @@ window.onload = async function () {
         }
     });
 }
-
-
 
 document.addEventListener('contextmenu', event => event.preventDefault());
