@@ -173,7 +173,7 @@ const getNumb = () => {
 }
 
 // check if the tile is surounded by another player tiles
-const checkSuround = (board, index) => {
+const checkSuround = (board, index, playerIndex) => {
 
     // create list of points to check 
     // if point is off the board ignore it!
@@ -205,6 +205,11 @@ const checkSuround = (board, index) => {
         return false;
     }
 
+    // player already has this tile no need to take it 
+    if(board[index] == playerIndex){
+        return false;
+    }
+
     //console.log(index);
     //console.log(checkPoints);
 
@@ -220,24 +225,24 @@ const checkSuround = (board, index) => {
 
 // when tile is taken check if this has 
 // caused any adjasent tiles to be surounded
-const checkBorders = (board, index) => {
+const checkBorders = (board, index, playerIndex) => {
     // store list of tiles that are surounded
     let taken = [];
 
     // check up 
-    if (index + DIM < board.length && checkSuround(board, index + DIM)) {
+    if (index + DIM < board.length && checkSuround(board, index + DIM, playerIndex)) {
         taken.push(index + DIM);
     }
     // check down 
-    if (index - DIM >= 0 && checkSuround(board, index - DIM)) {
+    if (index - DIM >= 0 && checkSuround(board, index - DIM, playerIndex)) {
         taken.push(index - DIM);
     }
     // check right 
-    if ((index % DIM) + 1 < DIM && checkSuround(board, index + 1)) {
+    if ((index % DIM) + 1 < DIM && checkSuround(board, index + 1, playerIndex)) {
         taken.push(index + 1);
     }
     // check left 
-    if ((index % DIM) - 1 >= 0 && checkSuround(board, index - 1)) {
+    if ((index % DIM) - 1 >= 0 && checkSuround(board, index - 1, playerIndex)) {
         taken.push(index - 1);
     }
     return taken;
@@ -258,6 +263,9 @@ const getPick = () => {
 window.onload = async function () {
     // list of player progress
     let players = [];
+
+    // busy variable to stop presses during flipping and animation
+    let busy = false;
 
     // number of teams
     let teamNumb;
@@ -302,6 +310,12 @@ window.onload = async function () {
                 return;
             }
 
+            if(busy){
+                return;
+            }
+
+            busy = true;
+
             document.querySelector("#questBox").classList.remove('hide');
             let quest = questList[index];
             let questText = document.querySelector("#questText");
@@ -316,15 +330,16 @@ window.onload = async function () {
                 btn.addEventListener('click', () => {
                     if (opt == quest.answer) { // correct
 
+                        // create list of tiles to flip
+                        let flipList = [];
                         let activePlayer = players[playerIndex];
                         activePlayer.score++;
-
                         playCorrect();
                         board[index] = playerIndex;
-                        card.outer.classList.add('flip');
-                        let path = `${CHAR_BASE}${activePlayer.char}.png`;
-                        card.img.src = path;
-                        let taken = checkBorders(board, index);
+                        flipList.push(card);
+
+                        // find which tiles are surounded and will be taken 
+                        let taken = checkBorders(board, index, playerIndex);
 
                         if (taken.length > 0) {
                             taken.forEach(takenIndex => {
@@ -334,18 +349,33 @@ window.onload = async function () {
                                 if(priorIndex != -1){
                                    players[priorIndex].score--; 
                                 }
+                                // add card to flip list
+                                flipList.push(cards[takenIndex]);
                                 // increment current player score
                                 activePlayer.score++;
-                                cards[takenIndex].outer.classList.remove('flip');
-                                cards[takenIndex].img.src = `${CHAR_BASE}${activePlayer.char}.png`;
-                                setTimeout(() => {
-                                    cards[takenIndex].outer.classList.add('flip');
-                                }, 500);
                             });
                         }
+
+                        let path = `${CHAR_BASE}${activePlayer.char}.png`;
+                        let flipIndex = 0;
+                        let handler = setInterval(()=>{
+                            let card = flipList[flipIndex];
+                            card.outer.classList.remove('flip');
+                            card.img.src = path;
+                            setTimeout(()=>{
+                                card.outer.classList.add('flip');
+                            }, 200)
+                            playPop();
+                            flipIndex++;
+                            if(flipIndex >= flipList.length){
+                                clearInterval(handler);
+                                busy = false;
+                            }
+                        }, 800);
                     }
                     else { // incorrect
                         playWrong();
+                        busy = false;
                     }
                     document.querySelector("#questBox").classList.add('hide');
                     // incremen to next player
