@@ -2,15 +2,15 @@ const CHAR_LIST = ["boo", "bowser", "coupa", "curby", "donkey-kong", "goomba", "
 
 // numbers
 const NUMBERS = [
-    "./res/img/number/one.png",
-    "./res/img/number/two.png",
-    "./res/img/number/three.png",
-    "./res/img/number/four.png",
-    "./res/img/number/five.png",
-    "./res/img/number/six.png",
-    "./res/img/number/seven.png",
-    "./res/img/number/eight.png",
-    "./res/img/number/nine.png",
+    "../../img/number/one.png",
+    "../../img/number/two.png",
+    "../../img/number/three.png",
+    "../../img/number/four.png",
+    "../../img/number/five.png",
+    "../../img/number/six.png",
+    "../../img/number/seven.png",
+    "../../img/number/eight.png",
+    "../../img/number/nine.png",
 ];
 
 const POS_LIST = [
@@ -216,13 +216,13 @@ const POS_LIST = [
 ];
 
 const ITEMS = [
-    "./res/img/item/blue shell.png",
-    "./res/img/item/bullet bill.png",
-    "./res/img/item/gold mushroom.png",
-    "./res/img/item/lightning.png",
-    "./res/img/item/mushroom.png",
-    "./res/img/item/tripple mushroom.png",
-    "./res/img/item/green shell.png"
+    "../../img/item/blue shell.png",
+    "../../img/item/bullet bill.png",
+    "../../img/item/gold mushroom.png",
+    "../../img/item/lightning.png",
+    "../../img/item/mushroom.png",
+    "../../img/item/tripple mushroom.png",
+    "../../img/item/green shell.png"
 ];
 
 
@@ -232,26 +232,25 @@ const MOVE_TIME = 1000;
 const STEP = 30;
 
 // correct / incorrect sound
-const correct = new Audio('../../resource/sound/bell.mp3');
-const wrong = new Audio('../../resource/sound/incorrect.mp3');
+const correct = new Audio('../../sound/bell.mp3');
+const wrong = new Audio('../../sound/incorrect.mp3');
 correct.preload = 'auto';
 wrong.preload = 'auto';
 // sound stuff
-const uiClick = new Audio('./res/sound/uiClick.mp3');
+const uiClick = new Audio('../../sound/click.mp3');
 uiClick.preload = 'auto';
 const playClick = () => { uiClick.currentTime = 0.5; uiClick.play(); };
 // change page audio
-const pageChange = new Audio('./res/sound/litupsubway-ui-open-sfx-513358.mp3');
+const pageChange = new Audio('../../sound/toggle.mp3');
 pageChange.preload = 'auto';
 const changePagePlay = () => { pageChange.currentTime = 0; pageChange.play(); };
 
-const winSound = new Audio('../../resource/sound/floraphonic-you-win-sequence-2-183949.mp3');
+const winSound = new Audio('../../sound/floraphonic-you-win-sequence-2-183949.mp3');
 winSound.preload = 'auto';
 
 // game\english-kart\res\sound\floraphonic-casual-click-pop.mp3
-const pop = new Audio('./res/sound/floraphonic-casual-click-pop.mp3');
+const pop = new Audio('../../sound/pop.mp3');
 pop.preload = 'auto';
-
 const playPop = () => { pop.currentTime = 0; pop.play(); };
 
 const getNumb = () => {
@@ -267,13 +266,41 @@ const getNumb = () => {
 
 // get the selected eiken level
 const getLevel = () => {
-    for (let i = 0; i < LIST.length; i++) {
+    for (let i = 0; i < 6; i++) {
         let input = document.querySelector(`#level${i}`);
         if (input.checked) {
             return i;
         }
     }
     return -1;
+}
+
+const loadQuest = async (index) => {
+    let vocab;
+    switch (index) {
+        case 0:
+            vocab = await getFive();
+            break;
+        case 1:
+            vocab = await getFour();
+            break;
+        case 2:
+            vocab = await getThree();
+            break;
+        case 3:
+            vocab = await getPTwo();
+            break;
+        case 4:
+            vocab = await getPTwoPlus();
+            break;
+        case 5:
+            getTwo();
+            break;
+        default:
+            vocab = await getFive();
+            break;
+    }
+    return vocab;
 }
 
 // get which character is selected
@@ -291,7 +318,7 @@ const getPick = () => {
 // make character object
 const makeChar = (name) => {
     let img = new Image();
-    img.src = `./res/img/character/${name}.png`;
+    img.src = `../../img/character/${name}.png`;
 
     console.log(name);
     let racer = {
@@ -361,11 +388,11 @@ window.onload = function () {
             return alert('move zero no ok');
         }
 
-        const passingCar = new Audio('./res/sound/freesound_community-engine-47745.mp3');
+        const passingCar = new Audio('../../sound/freesound_community-engine-47745.mp3');
         passingCar.preload = 'auto';
         passingCar.loop = true;
 
-        const stop = new Audio('./res/sound/stop.mp3');
+        const stop = new Audio('../../sound/stop.mp3');
         stop.preload = 'auto';
 
         // function to create list of sub points between two points
@@ -478,7 +505,7 @@ window.onload = function () {
                     console.log('win');
                     document.querySelector("#endBox").classList.remove('hide');
                     console.log(racers[index].name);
-                    document.querySelector("#endWinImg").src = `./res/img/character/${racers[index].name}.png`;
+                    document.querySelector("#endWinImg").src = `../../img/character/${racers[index].name}.png`;
                 }
             }
         }, waitTime);
@@ -499,7 +526,7 @@ window.onload = function () {
     /*
     level select
     */
-    document.querySelector('#lvlEntrBtn').addEventListener('click', () => {
+    document.querySelector('#lvlEntrBtn').addEventListener('click', async () => {
         let level = getLevel();
         console.log(level);
 
@@ -507,8 +534,8 @@ window.onload = function () {
             return;
         }
 
-        selectLevel = LIST[level];
-        questions = JSON.parse(JSON.stringify(selectLevel)).sort(() => Math.random() - 0.5);
+        let quest = await loadQuest(level);
+        questions = quest.sort(()=>Math.random() - 0.5);
 
         playClick();
         levelBox.classList.add('hide');
@@ -592,7 +619,7 @@ window.onload = function () {
         rollBtn.classList.remove('hide');
         diceBox.classList.add('hide');
         changePagePlay();
-        diceResultImg.src = "./res/img/item/dice.png";
+        diceResultImg.src = "../../img/item/dice.png";
 
         // move selected character
         let bridge = moveChar(rnd + 1, index);
@@ -694,7 +721,7 @@ window.onload = function () {
         itemBox.classList.add('hide');
         getItemBtn.classList.remove('hide');
         nextItemBtn.classList.add('hide');
-        powerUpImg.src = './res/img/item/question.png';
+        powerUpImg.src = '../../img/item/question.png';
         changePagePlay();
 
         let wait = 0;

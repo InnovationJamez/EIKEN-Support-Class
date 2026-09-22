@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./tictactoe.css">
+    <link rel="icon" type="image/x-icon" href="../../resource/img/icon/favicon.ico">
+</head>
+
+<body>
+
+    <div id="startScrn" class="control">
+        <div class="control-inner">
+            <div style="height: 80%;">
+                <h2>Game Time!</h2>
+
+                <h3>Eiken Level</h3>
+
+                <select name="level" id="level">
+                    <option value="5">EIKEN 5</option>
+                    <option value="4">EIKEN 4</option>
+                    <option value="3">EIKEN 3</option>
+                    <option value="2">EIKEN P2</option>
+                </select>
+
+                <h3>Start Player</h3>
+
+                <span>
+                    <input id="batsuRadio" name="mark" type="radio">
+                    <label for="batsuRadio">
+                        <img class="mark-img" src="../../resource/img/icon/mark_batsu.png" alt="">
+                    </label>
+                
+                </span>
+
+                <span>
+                    <input id="markradio" checked name="mark" type="radio">
+                    <label for="markradio">
+                        <img class="mark-img" src="../../resource/img/icon/mark_maru.png" alt="">
+                    </label>
+                </span>
+
+
+
+            </div>
+            <div>
+                <button onclick="start()">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="questScrn" class="control hide">
+        <div class="control-inner">
+            <div style="height: 80%;">
+                <h2 id="questText">Quest Text</h2>
+                <div id="btnCon"></div>
+            </div>
+            <div>
+                <button id="clsBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="endScrn" class="control hide">
+        <div class="control-inner">
+            <div style="height: 80%;">
+                <h2>Winner</h2>
+                <img id="endImg" src="../../resource/img/icon/mark_batsu.png" alt="">
+            </div>
+            <div>
+                <button onclick="location.reload(true);">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-root">
+        <div id="play-root">
+            <div class="row">
+                <button id="block0" class="block"></button>
+                <button id="block1" class="block"></button>
+                <button id="block2" class="block"></button>
+            </div>
+            <div class="row">
+                <button id="block3" class="block"></button>
+                <button id="block4" class="block"></button>
+                <button id="block5" class="block"></button>
+            </div>
+            <div class="row">
+                <button id="block6" class="block"></button>
+                <button id="block7" class="block"></button>
+                <button id="block8" class="block"></button>
+            </div>
+        </div>
+        <div id="ui-root">
+            <h2>Current turn</h2>
+            <img id="uiImg" src="../../resource/img/icon/mark_batsu.png" alt="">
+        </div>
+
+    </div>
+
+
+    <script src="../../js/jsonLoader.js"></script>
+    <script src="./tictactoe.js"></script>
+</body>
+
+</html>

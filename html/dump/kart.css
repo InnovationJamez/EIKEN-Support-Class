@@ -62,7 +62,7 @@ start screen
 }
 
 #startBtn {
-    background-image: url('./res/img/text/start.gif');
+    background-image: url('../../img/text/start.gif');
     background-size: 100% 100%;
     height: 35%;
     width: 50%;
