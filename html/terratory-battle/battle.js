@@ -46,12 +46,18 @@ const pageChange = new Audio('../../sound/toggle.mp3');
 pageChange.preload = 'auto';
 const changePagePlay = () => { pageChange.currentTime = 0; pageChange.play(); };
 
+// go agian sound
+const goAgain = new Audio('../../sound/correct.mp3');
+goAgain.preload = 'auto';
+const goAgainPlay = () => { goAgain.currentTime = 0; goAgain.play(); };
+
+
 // pop sound effect
 const pop = new Audio('../../sound/pop.mp3');
 pop.preload = 'auto';
 const playPop = () => { pop.currentTime = 0; pop.play(); };
 
-const createCards = (action) => {
+const createCards = () => {
     let battleBoard = document.querySelector("#battleBoard");
 
     let rowHeight = 100 / DIM;// also div width
@@ -133,33 +139,6 @@ const getLevel = () => {
     return -1;
 }
 
-const loadQuest = async (index) => {
-    let vocab;
-    switch (index) {
-        case 0:
-            vocab = await getFive();
-            break;
-        case 1:
-            vocab = await getFour();
-            break;
-        case 2:
-            vocab = await getThree();
-            break;
-        case 3:
-            vocab = await getPTwo();
-            break;
-        case 4:
-            vocab = await getPTwoPlus();
-            break;
-        case 5:
-            getTwo();
-            break;
-        default:
-            vocab = await getFive();
-            break;
-    }
-    return vocab;
-}
 
 const getNumb = () => {
     for (let i = 0; i < 5; i++) {
@@ -328,6 +307,10 @@ window.onload = async function () {
                 let btn = document.createElement('button');
                 btn.innerHTML = opt;
                 questBtnCon.appendChild(btn);
+
+                // store if the player can go a second time
+                let goAgain = false;
+
                 btn.addEventListener('click', () => {
                     if (opt == quest.answer) { // correct
 
@@ -357,6 +340,13 @@ window.onload = async function () {
                             });
                         }
 
+                        // player has taken more than one tile in a turn
+                        if(flipList.length > 1){
+                            // player will go one more time!
+                            goAgain = true;
+                            console.log(`${activePlayer.char} take another turn`);
+                        }
+
                         let path = `${CHAR_BASE}${activePlayer.char}.png`;
                         let flipIndex = 0;
                         let handler = setInterval(()=>{
@@ -371,6 +361,15 @@ window.onload = async function () {
                             if(flipIndex >= flipList.length){
                                 clearInterval(handler);
                                 busy = false;
+                                if(goAgain){
+                                    document.querySelector('#spImg').src = `${CHAR_BASE}${activePlayer.char}.png`;
+                                    document.querySelector('#spText').innerHTML = `Go again ${activePlayer.char}!`;
+                                    document.querySelector('#specialScreen').classList.remove('hide');
+                                    setTimeout(()=>{
+                                        document.querySelector('#specialScreen').classList.add('hide');
+                                    }, 800);
+                                    goAgainPlay();
+                                }
                             }
                         }, 800);
                     }
@@ -379,10 +378,12 @@ window.onload = async function () {
                         busy = false;
                     }
                     document.querySelector("#questBox").classList.add('hide');
-                    // incremen to next player
-                    playerIndex += 1;
-                    if (playerIndex >= players.length) {
-                        playerIndex = 0;
+                    // incremen to next player unless player goes again
+                    if(goAgain == false){
+                        playerIndex += 1;
+                        if (playerIndex >= players.length) {
+                            playerIndex = 0;
+                        }                        
                     }
                     // show change
                     updateUI();

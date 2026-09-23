@@ -1,7 +1,7 @@
 // IMAGES
-const BATSU = "../../resource/img/icon/mark_batsu.png";
-const MARU = "../../resource/img/icon/mark_maru.png";
-const TIE = "../../resource/img/icon/tie.png";
+const BATSU = "../../img/icon/mark_batsu.png";
+const MARU = "../../img/icon/mark_maru.png";
+const TIE = "../../img/icon/tie.png";
 
 // board values x o null
 const STATE = Object.freeze({
@@ -11,14 +11,14 @@ const STATE = Object.freeze({
 });
 
 // sound stuff
-const correct = new Audio('../../resource/sound/bell.mp3');
-const wrong = new Audio('../../resource/sound/incorrect.mp3');
+const correct = new Audio('../../sound/bell.mp3');
+const wrong = new Audio('../../sound/incorrect.mp3');
 correct.preload = 'auto';
 wrong.preload = 'auto';
 
 // resource\sound\floraphonic-you-win-sequence-2-183949.mp3
 // https://pixabay.com/sound-effects/search/win/
-const winSound = new Audio('../../resource/sound/floraphonic-you-win-sequence-2-183949.mp3');
+const winSound = new Audio('../../sound/floraphonic-you-win-sequence-2-183949.mp3');
 winSound.preload = 'auto';
 
 
@@ -102,7 +102,7 @@ const getQuest = (level) => {
     }
 }
 
-function start() {
+async function start() {
     // screens
     let questScrn = document.querySelector("#questScrn");
     let startScrn = document.querySelector("#startScrn");
@@ -119,7 +119,9 @@ function start() {
 
     // get leve questions
     let nLevel = Number(level.value);
-    let questPick = getQuest(nLevel).sort(() => Math.random() - 0.5);
+    let questPick = await loadQuest(nLevel);
+    //console.log(nLevel, questPick, loadQuest);
+    questPick.sort(() => Math.random() - 0.5);
     //console.log(questPick);
 
     // store tic tac board

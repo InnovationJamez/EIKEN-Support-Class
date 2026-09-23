@@ -275,33 +275,6 @@ const getLevel = () => {
     return -1;
 }
 
-const loadQuest = async (index) => {
-    let vocab;
-    switch (index) {
-        case 0:
-            vocab = await getFive();
-            break;
-        case 1:
-            vocab = await getFour();
-            break;
-        case 2:
-            vocab = await getThree();
-            break;
-        case 3:
-            vocab = await getPTwo();
-            break;
-        case 4:
-            vocab = await getPTwoPlus();
-            break;
-        case 5:
-            getTwo();
-            break;
-        default:
-            vocab = await getFive();
-            break;
-    }
-    return vocab;
-}
 
 // get which character is selected
 const getPick = () => {
